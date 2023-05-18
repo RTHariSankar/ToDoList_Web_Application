@@ -28,8 +28,8 @@ function createTodoTable(todos) {
                 completedCount--; // Decrement the counter when a task is marked as incomplete
             }
 
-            if (completedCount % 5 === 0) {
-                setTimeout(function(){alert(`Congrats. ${completedCount-90} Tasks have been Successfully Completed`);},300);
+            if (completedCount>90 && completedCount % 5 === 0) {
+                setTimeout(function(){alert(`Congrats. ${completedCount-90} Tasks have been Successfully Completed`);},100);
             }
         });
 
